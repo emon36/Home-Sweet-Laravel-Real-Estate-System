@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('nid')->unique()->nullable();
             $table->string('tin')->unique()->nullable();
+            $table->string('is_super')->default(0);
             $table->string('image')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

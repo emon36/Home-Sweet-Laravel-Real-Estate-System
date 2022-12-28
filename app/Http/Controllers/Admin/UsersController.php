@@ -84,9 +84,11 @@ class UsersController extends Controller
         ]);
     }
 
-    public function deleteAdmin($id){
+    public function deleteAdmin($id)
+    {
 
-          $admin = User::find($id);
+        $admin = User::find($id);
+
             $imagePath = public_path("/uploads/profileImages/".$admin->image);
             if (file_exists($imagePath))
             {

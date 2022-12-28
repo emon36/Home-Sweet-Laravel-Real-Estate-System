@@ -8,7 +8,7 @@
                     <div class="card-title">Orders</div>
 
                     <div class="table-responsive">
-                        <table class="table table-centered text-center table-borderless table-hover w-100 dt-responsive nowrap" id="order-table">
+                        <table class="table table-centered text-center table-borderless table-hover w-100  nowrap" id="order-table">
                             <thead class="table-light">
                             <tr>
                                 <th>Order Code</th>

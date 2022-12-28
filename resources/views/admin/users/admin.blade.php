@@ -27,7 +27,7 @@
                                     <td>{{$admin->name}}</td>
                                     <td>{{$admin->email}}</td>
                                     <td>{{$admin->phone}}</td>
-                                    <td><a href="javascript:void(0)"   data-id="{{$admin->id}}" data-original-title="delete" class="edit btn btn-danger btn-sm deleteAdmin {{ $admin->id == 1  ? 'disabled' : '' }}"> <i class="mdi mdi-delete"></i></a>
+                                    <td><a href="javascript:void(0)"   data-id="{{$admin->id}}" data-original-title="delete" class="edit btn btn-danger btn-sm deleteAdmin {{ $admin->is_super == 1  ? 'disabled' : '' }}"> <i class="mdi mdi-delete"></i></a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -80,14 +80,15 @@
                                 console.log(response);
                                 Swal.fire(
                                     'Deleted!',
-                                    'Admin has been deleted.',
+                                    response.message,
                                     'success'
                                 )
                                 setTimeout(() => {
                                     location.reload();
                                 }, 2000)
 
-                            }
+                            },
+
                         });
                     }
                 });

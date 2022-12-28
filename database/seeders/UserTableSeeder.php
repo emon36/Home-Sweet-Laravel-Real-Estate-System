@@ -19,6 +19,7 @@ class UserTableSeeder extends Seeder
             [
                 'role_id' => '1',
                 'name' => 'Admin',
+                'is_super' => 1,
                 'email' => 'admin@admin.com',
                 'phone' => '8801719738512',
                 'username'=> '8801719738512',
